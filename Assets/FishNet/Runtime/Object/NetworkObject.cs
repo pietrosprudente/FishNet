@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using FishNet.Managing;
 using FishNet.Connection;
 using UnityEngine;
@@ -292,10 +292,10 @@ namespace FishNet.Object
         /// <summary>
         /// True to keep this object spawned when the owner disconnects.
         /// </summary>
-        internal bool PreventDespawnOnDisconnect => _preventDespawnOnDisconnect;
+        public bool PreventDespawnOnDisconnect => _preventDespawnOnDisconnect;
         [Tooltip("True to keep this object spawned when the owner disconnects.")]
         [SerializeField]
-        private bool _preventDespawnOnDisconnect;
+        public bool _preventDespawnOnDisconnect;
         /// <summary>
         /// How to handle this object when it despawns. Scene objects are never destroyed when despawning.
         /// </summary>
